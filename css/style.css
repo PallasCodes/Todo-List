@@ -1,0 +1,103 @@
+:root {
+  --primary: #3498db;
+  --secondary: #34495e;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 28vh;
+  background-color: var(--primary);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#greeting {
+    text-align: center;
+}
+
+#add-task-wrapper {
+    background-color: #c7c2c2;
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#input-add-task {
+    border-radius: 2px;
+    border: none;
+    flex: 1 0 auto;
+    margin-right: 6px;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+#btn-add-task {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: brown;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+
+#task-container {
+    padding: 12px;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.task {
+    border-bottom: 1.5px solid #b2b2b2;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.task-check {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.task-description {
+    flex: 1 0 auto;
+}
+
+.task.done .task-description {
+    color: #666;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.btn-edit-task{
+    margin-right: 10px;
+}
